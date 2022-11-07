@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assignment 2</title>
+    <!-- linking the main stylesheet file -->
+    <link rel="stylesheet" href="game.css" />
+    <!-- linking the main script file -->
+    <script src="main.js"></script>
+  </head>
+
+  <body>
+    <!-- --------elements fo the hud starts from here ----------->
+    <div class="hud" id="hud">
+      <div class="c_score" id="id_score">Score : 0</div>
+      <div class="c_level" id="id_level">Level : 1</div>
+      <div class="c_high" id="id_high">High Score: 0</div>
+
+      <ul class="health">
+        <li id="onelifedown" class="life"></li>
+        <li id="twolifedown" class="life"></li>
+        <li id="threelifedown" class="life"></li>
+      </ul>
+    </div>
+    <!-- elements fo the hud starts from here --------xxx------>
+    <!-- audio for the games -->
+    <audio id="deadaudio">
+      <source src="dead.wav" type="audio/wav" />
+    </audio>
+    <audio id="arrowstartaudio">
+      <source src="arrow start.wav" type="audio/wav" />
+    </audio>
+    <audio id="bombdroppingaudio">
+      <source src="bomb dropping.wav" type="audio/wav" />
+    </audio>
+    <audio id="bombexplodeaudio">
+      <source src="bomb explode.wav" type="audio/wav" />
+    </audio>
+    <audio id="hitaudio">
+      <source src="hit.wav" type="audio/wav" />
+    </audio>
+    <audio id="arrowshootedaudio">
+      <source src="arrow shooted.wav" type="audio/wav" />
+    </audio>
+    <audio id="backgroundaudio">
+      <source src="background.wav" type="audio/wav" />
+    </audio>
+    <!-- audio for the games -->
+    <!-- start button  -->
+    <div class="start" id="start">Start</div>
+    <!-- start button  -->
+    <!-- player score card starts here -->
+    <div class="playersscorecard hide" id="playersscorecardid"></div>
+    <!-- player score card starts here -->
+    <!-- player input name -->
+    <div class="start-form hide" id="form">
+      <label for="fname">Player name:</label>
+      <input
+        type="text"
+        class="inputforname"
+        id="playername"
+        name="playername"
+        placeholder="Ex : Rohan "
+      /><br />
+      <button
+        class="submit_button"
+        type="button"
+        onclick="onthefunction()"
+        id="submi"
+      >
+        Submit
+      </button>
+    </div>
+    <!-- player input name -->
+    <!-- gameover button here  -->
+    <div class="gameover remove-gameover" id="gameover">Gameover</div>
+    <!-- gameover button here  -->
+    <!-- sky here  -->
+    <div class="sky"></div>
+    <!-- sky here  -->
+    <!-- element for the player -->
+    <div id="player" class="character fire stand up">
+      <div class="head"></div>
+
+      <div class="body"></div>
+
+      <div class="weapon bow"></div>
+    </div>
+    <!-- element for the player -->
+    <!-- arrow for the player -->
+    <div id="arrow" class="arrow"></div>
+    <!-- arrow for the player -->
+  </body>
+</html>
